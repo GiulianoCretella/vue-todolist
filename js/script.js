@@ -53,7 +53,9 @@ const comanda = new Vue({
         ],
     },
     methods:{
-        
+        remove(i){
+            this.comandaTav.splice(i,1)
+        }
     }
 })
 

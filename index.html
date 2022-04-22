@@ -17,11 +17,11 @@
                 <h1>Comanda Tavolo n.1</h1>
             </div>
             <ul>
-                <li v-for="cocktail in comandaTav">
+                <li v-for="(cocktail, index) in comandaTav">
                     <span @click="cocktail.done = !cocktail.done" :class="{'decoration': cocktail.done === true}">
                         {{cocktail.cocktail}}
                     </span> 
-                    <i class="fa-solid fa-xmark"></i></li>
+                    <i @click="remove(index)" class="fa-solid fa-xmark"></i></li>
             </ul>
         </div>
     </div>
