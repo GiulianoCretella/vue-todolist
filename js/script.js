@@ -63,6 +63,7 @@ const comanda = new Vue({
                 cocktail:this.nuovoCocktail
             }
             this.comandaTav.push(cocktailN);
+            this.nuovoCocktail='';
         }
     }
 })
