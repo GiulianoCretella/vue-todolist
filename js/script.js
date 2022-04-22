@@ -8,47 +8,58 @@ const comanda = new Vue({
         comandaTav:[
             {
                 done:false,
-                cocktail: 'Margarita'
+                cocktail: 'Margarita',
+                bicchiere:"fa-solid fa-martini-glass"
             },
             {
                 done:false,
-                cocktail: 'Negroni'
+                cocktail: 'Negroni',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'Daiquiri'
+                cocktail: 'Daiquiri',
+                bicchiere:"fa-solid fa-martini-glass"
             },
             {
                 done:false,
-                cocktail: 'Americano'
+                cocktail: 'Americano',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'MiTo'
+                cocktail: 'MiTo',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'Sazerac'
+                cocktail: 'Sazerac',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'Old-Fashioned'
+                cocktail: 'Old-Fashioned',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'Zombie'
+                cocktail: 'Zombie',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
             {
                 done:false,
-                cocktail: 'Brandy Crusta'
+                cocktail: 'Brandy Crusta',
+                bicchiere:"fa-solid fa-wine-glass-empty"
             },
             {
                 done:false,
-                cocktail: 'Dry Martini'
+                cocktail: 'Dry Martini',
+                bicchiere:"fa-solid fa-martini-glass"
             },
             {
                 done:false,
-                cocktail: 'Analcolico'
+                cocktail: 'Analcolico',
+                bicchiere:"fa-solid fa-whiskey-glass"
             },
         ],
         nuovoCocktail:'',
@@ -60,7 +71,8 @@ const comanda = new Vue({
         aggiungi(){
             const cocktailN = {
                 done:false,
-                cocktail:this.nuovoCocktail
+                cocktail:this.nuovoCocktail,
+                bicchiere:'fa-solid fa-whiskey-glass',
             }
             this.comandaTav.push(cocktailN);
             this.nuovoCocktail='';

@@ -1,3 +1,6 @@
 .decoration{
     text-decoration: line-through;
 }
+.fa-solid{
+    color: rgb(170, 140, 95);
+}

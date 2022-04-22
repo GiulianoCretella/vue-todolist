@@ -18,6 +18,7 @@
             </div>
             <ul>
                 <li v-for="(cocktail, index) in comandaTav">
+                    <i :class="cocktail.bicchiere"></i>
                     <span @click="cocktail.done = !cocktail.done" :class="{'decoration': cocktail.done === true}">
                         {{cocktail.cocktail}}
                     </span> 
