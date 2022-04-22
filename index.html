@@ -24,6 +24,12 @@
                     <i @click="remove(index)" class="fa-solid fa-xmark"></i></li>
             </ul>
         </div>
+        <div class="input-group mb-3 w-50">
+            <input v-model="nuovoCocktail" type="text" class="form-control text-center" placeholder="Cocktail"
+            aria-label="Cocktail Comanda Tav n.1">
+            <button @click="aggiungi" class="btn btn-outline-secondary"
+            type="button">Aggiungi Cocktail</button>
+         </div>
     </div>
     <script src="./js/script.js"></script>
 </body>

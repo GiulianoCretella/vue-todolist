@@ -51,10 +51,18 @@ const comanda = new Vue({
                 cocktail: 'Analcolico'
             },
         ],
+        nuovoCocktail:'',
     },
     methods:{
         remove(i){
             this.comandaTav.splice(i,1)
+        },
+        aggiungi(){
+            const cocktailN = {
+                done:false,
+                cocktail:this.nuovoCocktail
+            }
+            this.comandaTav.push(cocktailN);
         }
     }
 })
